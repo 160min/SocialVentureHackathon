@@ -156,7 +156,7 @@ def program_match(project, program):
     overall = "준비할 항목 있음" if any(item["status"] == "missing" for item in checks) else "공고 확인 필요" if any(item["status"] == "check" for item in checks) else "등록 정보상 준비됨"
     return {"score": len(overlap) + int("중학생" in program["grades"]), "reasons": reasons, "missing": missing, "checks": checks, "status": overall, "notice": notice}
 
-
+# 테스트
 class Handler(BaseHTTPRequestHandler):
     server_version = "Tanteukitta/1.0"
     def log_message(self, *_args): pass
