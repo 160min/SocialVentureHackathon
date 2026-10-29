@@ -1,0 +1,9 @@
+[project]
+name = "daejeon-youth-science-platform"
+version = "1.0.0"
+description = "대전 청소년 과학·AI 프로젝트 지원 플랫폼 MVP"
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.uv]
+package = false
